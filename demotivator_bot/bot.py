@@ -149,6 +149,7 @@ def make_demotivator(message):
 
     except Exception as e:
             bot.reply_to(message, "Что-то сломалось... Попробуй другое фото.")
+            admin_bot.send_message(message.chat.id, f'{str(e)}')
             print("Ошибка:", e)
 
 bot.infinity_polling()
