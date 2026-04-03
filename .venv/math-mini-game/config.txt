@@ -1,0 +1,4 @@
+parameters {
+    operations_num: 1
+    spread: [1, 10]
+}
